@@ -64,7 +64,7 @@ definitions:
     properties:
       addressLabel:
         type: "array"
-        description: "Displayable address for UI or a label on a letter"
+        description: "Displayable address for UI or a label on a letter."
         items:
           type: "string"
       countryCode:
