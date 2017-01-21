@@ -1,0 +1,130 @@
+---
+swagger: "2.0"
+info:
+  description: "Customer API"
+  version: "0.9.0"
+  title: "Customer"
+host: "customer.services.nykredit.it"
+basePath: "/"
+schemes:
+- "https"
+paths:
+  /customers/{customerId}:
+    get:
+      tags:
+      - "customer"
+      summary: "Returns information regarding a customer"
+      produces:
+      - "application/hal+json"
+      parameters:
+      - name: "customerId"
+        in: "path"
+        description: "A id for a customer"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "Success"
+          schema:
+            $ref: "#/definitions/Customer"
+        500:
+          description: "Internal server error"
+          schema:
+            $ref: "#/definitions/Error"
+definitions:
+  CustomerHALLink:
+    type: "object"
+    properties:
+      href:
+        type: "string"
+        example: "http://customer.services.nykredit.it/customers/2288888"
+  LoanHALLink:
+    type: "object"
+    properties:
+      href:
+        type: "string"
+        example: "http://mortgage.services.nykredit.it/loans?borrowerId=2288888"
+  Customer:
+    type: "object"
+    properties:
+      _links:
+        $ref: "#/definitions/Customer__links"
+      firstName:
+        type: "string"
+        example: "Poul"
+        description: "Danish: Fornavn"
+      surname:
+        type: "string"
+        example: "Poulsen"
+        description: "Danish: Efternavn"
+      address:
+        $ref: "#/definitions/Address"
+  Address:
+    type: "object"
+    properties:
+      addressLabel:
+        type: "array"
+        description: "Displayable address for UI or a label on a letter"
+        items:
+          type: "string"
+      countryCode:
+        type: "string"
+        example: "DK"
+        description: "Danish: Landekode"
+      postalCode:
+        type: "string"
+        example: "9000"
+        description: "Danish: Postnr"
+      city:
+        type: "string"
+        example: "Aalborg"
+        description: "Danish: By/Postdistrikt"
+      streetName:
+        type: "string"
+        example: "Fredrik Bajers Vej"
+        description: "Danish: Vejnavn"
+      streetNumber:
+        type: "integer"
+        example: 1
+        description: "Danish: Vejnummer"
+      floor:
+        type: "integer"
+        example: 2
+        description: "Danish: Etage"
+      floorLocation:
+        type: "string"
+        example: "tv"
+        description: "Danish: Dørbetegnelse"
+      flatNumber:
+        type: "integer"
+        example: 21
+        description: "Danish: Lejlighedsnr"
+      buildingNumber:
+        type: "integer"
+        example: 122
+        description: "Danish: Bygningsnr"
+      postboxNumber:
+        type: "string"
+        example: "388881"
+        description: "Danish: Postboksnr"
+      careOfName:
+        type: "string"
+        description: "Danish: C/O navn"
+  Error:
+    type: "object"
+    properties:
+      msg:
+        type: "string"
+      sid:
+        type: "string"
+      values:
+        type: "object"
+        additionalProperties:
+          type: "object"
+          properties: {}
+  Customer__links:
+    properties:
+      mortgage-loans:
+        $ref: "#/definitions/LoanHALLink"
+      self:
+        $ref: "#/definitions/CustomerHALLink"
