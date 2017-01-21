@@ -1,0 +1,1104 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Loan</title>
+    <style type="text/css">
+      body {
+	font-family: Trebuchet MS, sans-serif;
+	font-size: 15px;
+	color: #444;
+	margin-right: 24px;
+}
+
+h1	{
+	font-size: 25px;
+}
+h2	{
+	font-size: 20px;
+}
+h3	{
+	font-size: 16px;
+	font-weight: bold;
+}
+hr	{
+	height: 1px;
+	border: 0;
+	color: #ddd;
+	background-color: #ddd;
+}
+
+.app-desc {
+  clear: both;
+  margin-left: 20px;
+}
+.param-name {
+  width: 100%;
+}
+.license-info {
+  margin-left: 20px;
+}
+
+.license-url {
+  margin-left: 20px;
+}
+
+.model {
+  margin: 0 0 0px 20px;
+}
+
+.method {
+  margin-left: 20px;
+}
+
+.method-notes	{
+	margin: 10px 0 20px 0;
+	font-size: 90%;
+	color: #555;
+}
+
+pre {
+  padding: 10px;
+  margin-bottom: 2px;
+}
+
+.http-method {
+ text-transform: uppercase;
+}
+
+pre.get {
+  background-color: #0f6ab4;
+}
+
+pre.post {
+  background-color: #10a54a;
+}
+
+pre.put {
+  background-color: #c5862b;
+}
+
+pre.delete {
+  background-color: #a41e22;
+}
+
+.huge	{
+	color: #fff;
+}
+
+pre.example {
+  background-color: #f3f3f3;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+code {
+  white-space: pre;
+}
+
+.nickname {
+  font-weight: bold;
+}
+
+.method-path {
+  font-size: 1.5em;
+  background-color: #0f6ab4;
+}
+
+.up {
+  float:right;
+}
+
+.parameter {
+  width: 500px;
+}
+
+.param {
+  width: 500px;
+  padding: 10px 0 0 20px;
+  font-weight: bold;
+}
+
+.param-desc {
+  width: 700px;
+  padding: 0 0 0 20px;
+  color: #777;
+}
+
+.param-type {
+  font-style: italic;
+}
+
+.param-enum-header {
+width: 700px;
+padding: 0 0 0 60px;
+color: #777;
+font-weight: bold;
+}
+
+.param-enum {
+width: 700px;
+padding: 0 0 0 80px;
+color: #777;
+font-style: italic;
+}
+
+.field-label {
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.field-items	{
+	padding: 0 0 15px 0;
+	margin-bottom: 15px;
+}
+
+.return-type {
+  clear: both;
+  padding-bottom: 10px;
+}
+
+.param-header {
+  font-weight: bold;
+}
+
+.method-tags {
+  text-align: right;
+}
+
+.method-tag {
+  background: none repeat scroll 0% 0% #24A600;
+  border-radius: 3px;
+  padding: 2px 10px;
+  margin: 2px;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+}
+
+    </style>
+  </head>
+  <body>
+  <h1>Loan</h1>
+    <div class="app-desc">Returns information regarding effective mortgage loans</div>
+    <div class="app-desc">More information: <a href="https://helloreverb.com">https://helloreverb.com</a></div>
+    <div class="app-desc">Contact Info: <a href="hello@helloreverb.com">hello@helloreverb.com</a></div>
+    <div class="app-desc">Version: 0.9</div>
+    <div class="app-desc">BasePath:/</div>
+    <div class="license-info">All rights reserved</div>
+    <div class="license-url">http://apache.org/licenses/LICENSE-2.0.html</div>
+  <h2>Access</h2>
+
+  <h2><a name="__Methods">Methods</a></h2>
+  [ Jump to <a href="#__Models">Models</a> ]
+
+  <h3>Table of Contents </h3>
+  <div class="method-summary"></div>
+  <h4><a href="#Loans">Loans</a></h4>
+  <ul>
+  <li><a href="#fundingsFundingIdGet"><code><span class="http-method">get</span> /fundings/{fundingId}</code></a></li>
+  <li><a href="#loansGet"><code><span class="http-method">get</span> /loans</code></a></li>
+  <li><a href="#loansLoanIdGet"><code><span class="http-method">get</span> /loans/{loanId}</code></a></li>
+  <li><a href="#loansLoanIdInstalmentScheduleGet"><code><span class="http-method">get</span> /loans/{loanId}/instalment-schedule</code></a></li>
+  </ul>
+
+  <h1><a name="Loans">Loans</a></h1>
+  <div class="method"><a name="fundingsFundingIdGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /fundings/{fundingId}</code></pre></div>
+    <div class="method-summary">Get a specific funding (<span class="nickname">fundingsFundingIdGet</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">fundingId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Funding id </div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Funding">Funding</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "interestRate" : 1.3579000000000001069366817318950779736042022705078125,
+  "fundedBonds" : [ {
+    "BondPrice" : {
+      "disbursementBondPrice" : 1.3579000000000001069366817318950779736042022705078125,
+      "estimatedPrepaymentBondPrice" : 1.3579000000000001069366817318950779736042022705078125
+    },
+    "_embedded" : {
+      "bondProduct" : {
+        "couponRate" : 1.3579000000000001069366817318950779736042022705078125,
+        "_links" : {
+          "self" : {
+            "href" : "http://mortgage.services.nykredit.it/bond-products/AU0000XVGZA3"
+          }
+        }
+      }
+    },
+    "principalAmountOutstanding" : "",
+    "principalAmount" : ""
+  } ],
+  "_links" : {
+    "self" : {
+      "href" : "http://mortgage.services.nykredit.it/fundings/535352201"
+    }
+  },
+  "principalAmountOutstanding" : {
+    "amount" : 232324.11,
+    "currency" : "DKK"
+  },
+  "principalAmount" : ""
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Success
+        <a href="#Funding">Funding</a>
+    <h4 class="field-label">404</h4>
+    Not Found
+        <a href="#Error">Error</a>
+    <h4 class="field-label">500</h4>
+    Internal server error
+        <a href="#Error">Error</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="loansGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /loans</code></pre></div>
+    <div class="method-summary">Search for loans (<span class="nickname">loansGet</span>)</div>
+    <div class="method-notes"></div>
+
+
+
+
+
+    <h3 class="field-label">Query parameters</h3>
+    <div class="field-items">
+      <div class="param">borrower (required)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The person id defining which borrowers&#39;s loans to list </div>
+    </div>  <!-- field-items -->
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Loans">Loans</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "_links" : {
+    "self" : {
+      "href" : "http://mortgage.services.nykredit.it/loans"
+    }
+  },
+  "_embedded" : {
+    "loans" : [ {
+      "interestRate" : 2.2,
+      "latestActivity" : {
+        "date" : "2000-01-23T04:56:07.000+00:00",
+        "type" : "periodic-loan-repayment"
+      },
+      "_links" : {
+        "loanProduct" : {
+          "href" : "http://mortgage.services.nykredit.it/loan-products/4343"
+        },
+        "self" : {
+          "href" : "http://mortgage.services.nykredit.it/loans/535352201"
+        }
+      },
+      "_embedded" : {
+        "loanProduct" : {
+          "_links" : {
+            "self" : ""
+          },
+          "displayName" : "RenteMax"
+        }
+      },
+      "principalAmountOutstanding" : {
+        "amount" : 232324.11,
+        "currency" : "DKK"
+      },
+      "loanId" : "123456706",
+      "principalAmount" : ""
+    } ]
+  }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Success
+        <a href="#Loans">Loans</a>
+    <h4 class="field-label">400</h4>
+    Bad Request
+        <a href="#Error">Error</a>
+    <h4 class="field-label">500</h4>
+    Internal server error
+        <a href="#Error">Error</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="loansLoanIdGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /loans/{loanId}</code></pre></div>
+    <div class="method-summary">Get a specific loan (<span class="nickname">loansLoanIdGet</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">loanId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Loan id </div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Loan">Loan</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "arrears" : {
+    "startDate" : "2000-01-23T04:56:07.000+00:00"
+  },
+  "brokerProfitability" : {
+    "initial" : "",
+    "yearly" : ""
+  },
+  "_links" : {
+    "funding" : {
+      "href" : "http://mortgage.services.nykredit.it/fundings/535352201"
+    },
+    "real-property" : {
+      "href" : "http://real-property.services.nykredit.it/real-properties/5353522"
+    },
+    "instalmentSchedule" : {
+      "href" : "http://mortgage.services.nykredit.it/loans/535352201/instalment-schedule"
+    },
+    "borrowers" : {
+      "href" : "http://customer.services.nykredit.it/customers/4341111"
+    },
+    "loanProduct" : {
+      "href" : "http://mortgage.services.nykredit.it/loan-products/4343"
+    },
+    "self" : {
+      "href" : "http://mortgage.services.nykredit.it/loans/535352201"
+    },
+    "guarantees" : [ {
+      "href" : "http://mortgage.services.nykredit.it/guarantees/11223344"
+    } ]
+  },
+  "displayName" : "Fastforrentet obligationslån, 2%, 30 år, med afdragsfrihed",
+  "principalAmountOutstanding" : {
+    "amount" : 232324.11,
+    "currency" : "DKK"
+  },
+  "prepaymentConditions" : {
+    "callableFlag" : true,
+    "callableBondPrice" : 1.3579000000000001069366817318950779736042022705078125,
+    "callableDeadline" : "2000-01-23T04:56:07.000+00:00"
+  },
+  "loanActivitySchedule" : [ {
+    "date" : "2000-01-23T04:56:07.000+00:00",
+    "type" : "periodic-loan-repayment"
+  } ],
+  "principalAmount" : "",
+  "remainingPeriodToMaturity" : "P9Y6M",
+  "interestRateSchedule" : [ {
+    "interestRate" : 2.2,
+    "endDate" : "2000-01-23T04:56:07.000+00:00",
+    "startDate" : "2000-01-23T04:56:07.000+00:00"
+  } ],
+  "paymentPatternSchedule" : [ {
+    "endDate" : "2000-01-23T04:56:07.000+00:00",
+    "type" : "fixed-principal",
+    "startDate" : "2000-01-23T04:56:07.000+00:00"
+  } ],
+  "_embedded" : {
+    "loanProduct" : {
+      "_links" : {
+        "self" : ""
+      },
+      "displayName" : "RenteMax"
+    }
+  },
+  "loanId" : "aeiou",
+  "interestMarginSchedule" : [ {
+    "endDate" : "2000-01-23T04:56:07.000+00:00",
+    "interestMargin" : 0.75,
+    "startDate" : "2000-01-23T04:56:07.000+00:00"
+  } ],
+  "interestOnly" : {
+    "endDate" : "2000-01-23T04:56:07.000+00:00"
+  }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Success
+        <a href="#Loan">Loan</a>
+    <h4 class="field-label">404</h4>
+    Not Found
+        <a href="#Error">Error</a>
+    <h4 class="field-label">500</h4>
+    Internal server error
+        <a href="#Error">Error</a>
+  </div> <!-- method -->
+  <hr/>
+  <div class="method"><a name="loansLoanIdInstalmentScheduleGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /loans/{loanId}/instalment-schedule</code></pre></div>
+    <div class="method-summary">Get an instalment schedule for a specific loan (<span class="nickname">loansLoanIdInstalmentScheduleGet</span>)</div>
+    <div class="method-notes"></div>
+
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">loanId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; Loan id </div>
+    </div>  <!-- field-items -->
+
+
+
+
+
+
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#InstalmentSchedule">InstalmentSchedule</a>
+      
+    </div>
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    <h3 class="field-label">Example data</h3>
+    <div class="example-data-content-type">Content-Type: application/json</div>
+    <pre class="example"><code>{
+  "instalmentSchedule" : [ {
+    "endDate" : "2000-01-23T04:56:07.000+00:00",
+    "interestMargin" : "",
+    "interest" : "",
+    "principalAmountOutstanding" : "",
+    "payment" : {
+      "amount" : 232324.11,
+      "currency" : "DKK"
+    },
+    "taxDeductibles" : "",
+    "startDate" : "2000-01-23T04:56:07.000+00:00",
+    "repayment" : ""
+  } ],
+  "_links" : {
+    "self" : {
+      "href" : "http://mortgage.services.nykredit.it/loans/535352201/instalment-schedule"
+    }
+  }
+}</code></pre>
+
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+      <li><code>application/json</code></li>
+    </ul>
+
+    <h3 class="field-label">Responses</h3>
+    <h4 class="field-label">200</h4>
+    Success
+        <a href="#InstalmentSchedule">InstalmentSchedule</a>
+    <h4 class="field-label">404</h4>
+    Not Found
+        <a href="#Error">Error</a>
+    <h4 class="field-label">500</h4>
+    Internal server error
+        <a href="#Error">Error</a>
+  </div> <!-- method -->
+  <hr/>
+
+  <div class="up"><a href="#__Models">Up</a></div>
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h3>Table of Contents</h3>
+  <ol>
+    <li><a href="#Activity"><code>Activity</code></a></li>
+    <li><a href="#Address"><code>Address</code></a></li>
+    <li><a href="#Amount"><code>Amount</code></a></li>
+    <li><a href="#Arrears"><code>Arrears</code></a></li>
+    <li><a href="#BondProductHALLink"><code>BondProductHALLink</code></a></li>
+    <li><a href="#BrokerProfitability"><code>BrokerProfitability</code></a></li>
+    <li><a href="#CustomerHALLink"><code>CustomerHALLink</code></a></li>
+    <li><a href="#EmbeddedBondProduct"><code>EmbeddedBondProduct</code></a></li>
+    <li><a href="#EmbeddedBondProduct__links"><code>EmbeddedBondProduct__links</code></a></li>
+    <li><a href="#EmbeddedLoan"><code>EmbeddedLoan</code></a></li>
+    <li><a href="#EmbeddedLoanProduct"><code>EmbeddedLoanProduct</code></a></li>
+    <li><a href="#EmbeddedLoanProduct__links"><code>EmbeddedLoanProduct__links</code></a></li>
+    <li><a href="#EmbeddedLoan__embedded"><code>EmbeddedLoan__embedded</code></a></li>
+    <li><a href="#EmbeddedLoan__links"><code>EmbeddedLoan__links</code></a></li>
+    <li><a href="#Error"><code>Error</code></a></li>
+    <li><a href="#FundedBond"><code>FundedBond</code></a></li>
+    <li><a href="#FundedBond_BondPrice"><code>FundedBond_BondPrice</code></a></li>
+    <li><a href="#FundedBond__embedded"><code>FundedBond__embedded</code></a></li>
+    <li><a href="#Funding"><code>Funding</code></a></li>
+    <li><a href="#FundingHALLink"><code>FundingHALLink</code></a></li>
+    <li><a href="#Funding__links"><code>Funding__links</code></a></li>
+    <li><a href="#GuaranteeHALLink"><code>GuaranteeHALLink</code></a></li>
+    <li><a href="#Instalment"><code>Instalment</code></a></li>
+    <li><a href="#InstalmentHALLink"><code>InstalmentHALLink</code></a></li>
+    <li><a href="#InstalmentSchedule"><code>InstalmentSchedule</code></a></li>
+    <li><a href="#InstalmentSchedule__links"><code>InstalmentSchedule__links</code></a></li>
+    <li><a href="#InterestMarginScheduleItem"><code>InterestMarginScheduleItem</code></a></li>
+    <li><a href="#InterestOnly"><code>InterestOnly</code></a></li>
+    <li><a href="#InterestRateScheduleItem"><code>InterestRateScheduleItem</code></a></li>
+    <li><a href="#Loan"><code>Loan</code></a></li>
+    <li><a href="#LoanHALLink"><code>LoanHALLink</code></a></li>
+    <li><a href="#LoanProductHALLink"><code>LoanProductHALLink</code></a></li>
+    <li><a href="#Loan__embedded"><code>Loan__embedded</code></a></li>
+    <li><a href="#Loan__links"><code>Loan__links</code></a></li>
+    <li><a href="#Loans"><code>Loans</code></a></li>
+    <li><a href="#LoansHALLink"><code>LoansHALLink</code></a></li>
+    <li><a href="#Loans__embedded"><code>Loans__embedded</code></a></li>
+    <li><a href="#Loans__links"><code>Loans__links</code></a></li>
+    <li><a href="#PaymentPattern"><code>PaymentPattern</code></a></li>
+    <li><a href="#PrepaymentCondition"><code>PrepaymentCondition</code></a></li>
+    <li><a href="#RealPropertyHALLink"><code>RealPropertyHALLink</code></a></li>
+  </ol>
+
+  <div class="model">
+    <h3 class="field-label"><a name="Activity">Activity - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">type </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The type of the Arrangement Mortgage Activity. 
+
+- &#39;periodic-loan-repayment&#39;: Identifies an activity of regular payment installations on a Loan Arrangement 
+- &#39;partial-prepayment&#39;: Identifies an activity which is a Pre-Payment of a loan where the amount does not cover the Principal Amount Outstanding. A Partial Prepayment on a Mortgage Loan results in a recalculation on the 
+Mortgage Loan payment conditions for the remaining loan period to maturity 
+- &#39;initiation&#39;: Identifies an activity whereby the Arrangement becomes active 
+- &#39;index-regulation&#39;: Index Regulation of indexed loans </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">periodic-loan-repayment</div><div class="param-enum">partial-prepayment</div><div class="param-enum">initiation</div><div class="param-enum">index-regulation</div>
+<div class="param">date </div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The date on which the Arrangement Mortgage Activity actually concluded. format: date</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Address">Address - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">addressLabel </div><div class="param-desc"><span class="param-type"><a href="#string">array[String]</a></span> The address of a Real Property represented by address lines for display purposes only.
+E.g. [&#39;Hesselgade 7&#39;, &#39;5800 Nyborg&#39;] </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Amount">Amount - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">amount </div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span>  format: double</div>
+<div class="param">currency </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Arrears">Arrears - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">startDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The date of the occurrence of the first arrears on the loan.
+
+Danish: Første restancedato format: date</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="BondProductHALLink">BondProductHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="BrokerProfitability">BrokerProfitability - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">yearly (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The annual profit to the broker of the loan.
+
+Danish: Årlig indtjening </div>
+<div class="param">initial (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The initial profit to the broker of the loan.
+
+Danish: Initiel indtjening </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="CustomerHALLink">CustomerHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedBondProduct">EmbeddedBondProduct - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedBondProduct__links">EmbeddedBondProduct__links</a></span>  </div>
+<div class="param">couponRate (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> Identifies a Rate Condition that specifies the actual rate on a Bond as a percentage of its face value.
+
+Danish: Kuponrente format: double</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedBondProduct__links">EmbeddedBondProduct__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#BondProductHALLink">BondProductHALLink</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedLoan">EmbeddedLoan - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedLoan__links">EmbeddedLoan__links</a></span>  </div>
+<div class="param">loanId </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> Loan Id for an effective Mortgage arrangement (as defined by Nykredit/Totalkredit), Real Property Id (ejendomsnummer) and a sequence combined into a string. 
+
+Example: Real Property Id (Ejendomsnummer) 1234567 and sequence number 6, results into the string 123456706.
+
+Danish: Lånenummer </div>
+<div class="param">interestRate </div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> The interest rate percentage of the loan used to calculate the Interest Payment of the Instalment reflected on the Amortization Schedule for the loan.
+
+The Interest Rate applying for the Arrangement Mortgage Loan is derived from the Funding Arrangement. Depending on the type of Mortgage, the Interest Rate at Arrangement Mortgage Loan
+(1) is reflecting the Interest Rate at Arrangement Funding (Fastforrentede obligationslån)
+(2) is calculated when Mortgage Bond Prices for a new Funding Arrangement are known (Kontantlån/Tilpasningslån)
+(3) is calculated when a new reference Interest Rate is published (Variabeltforrentede obligationslån)
+
+Danish: Renteprocent format: double</div>
+<div class="param">principalAmountOutstanding </div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> Principal Amount Outstanding states the amount left of the Principal Amount at the Latest Activity Date. 
+The latest Principal Amount Outstanding is e.g. used to calculate the following Instalment amounts like Interest Payment, Interst Margin Payment, and Principal Payment.
+
+When used in context Mortgage, Principal Amount Outstanding is the remaining amount by a given date that the Borrower is obliged to pay back. This Principal Amount Outstanding is in legacy refered to as 
+- &#39;Kontantrestgæld&#39; for products of type &#39;Kontantlån&#39; or &#39;Tilpasningslån&#39;
+- &#39;Restgæld&#39; for products of type &#39;Fastforrentet Obligationslån&#39;. In these cases, the amount will be the same as Principal Amount Outstanding in context Funding.
+
+Danish: Restgæld </div>
+<div class="param">principalAmount </div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> Identifies that the amount is a Principal Amount, being an amount representing a loan amount.
+
+When used in Arrangement Mortgage Loan, Principal Amount is the amount that the Borrower is obliged to pay back. This Principal Amount is in legacy refered to as 
+- &#39;Kontanthovedstol&#39; for products of type &#39;Kontantlån&#39; or &#39;Tilpasningslån&#39;
+- &#39;Hovedstol&#39; for products of type &#39;Fastforrentet Obligationslån&#39;. In these cases, the amount will be the same as Principal Amount in Arrangement Funding.
+
+Danish: Hovedstol </div>
+<div class="param">latestActivity </div><div class="param-desc"><span class="param-type"><a href="#Activity">Activity</a></span> Latest activity tells what the most actual registered activity on the loan is (prior to current date).
+
+Danish: Seneste aktivitet </div>
+<div class="param">_embedded (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedLoan__embedded">EmbeddedLoan__embedded</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedLoanProduct">EmbeddedLoanProduct - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedLoanProduct__links">EmbeddedLoanProduct__links</a></span>  </div>
+<div class="param">displayName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> A readable label given to a specific Product.
+
+Danish: Låneproduktnavn </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedLoanProduct__links">EmbeddedLoanProduct__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#LoanProductHALLink">LoanProductHALLink</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedLoan__embedded">EmbeddedLoan__embedded - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">loanProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedLoanProduct">EmbeddedLoanProduct</a></span> Loan Product identifies a Product that the mortgage Bank (ex. Totalkredit) offers as possible setup for a loan arrangement.
+
+Danish: Låneprodukt </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="EmbeddedLoan__links">EmbeddedLoan__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">loanProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#LoanProductHALLink">LoanProductHALLink</a></span>  </div>
+<div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#LoanHALLink">LoanHALLink</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Error">Error - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">msg (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">sid (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">values (optional)</div><div class="param-desc"><span class="param-type"><a href="#object">map[String, Object]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="FundedBond">FundedBond - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">principalAmountOutstanding (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> Principal Amount Outstanding states the amount left of the Principal Amount at a given Instalment date
+
+Danish: Restgæld </div>
+<div class="param">principalAmount (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The principal amount of the Bond used to fund a loan.
+
+Danish: Hovedstol </div>
+<div class="param">BondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundedBond_BondPrice">FundedBond_BondPrice</a></span>  </div>
+<div class="param">_embedded (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundedBond__embedded">FundedBond__embedded</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="FundedBond_BondPrice">FundedBond_BondPrice - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>Bond Price contains relevant bond prices for the specific funded bond
+
+Danish: Obligationskurs</div>
+    <div class="field-items">
+      <div class="param">disbursementBondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> The bond price at the time of disbursement.
+
+Danish: Udbetalingskurs format: double</div>
+<div class="param">estimatedPrepaymentBondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> The actual estimated bond price for prepayment.
+
+Danish: Indfrielseskurs format: double</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="FundedBond__embedded">FundedBond__embedded - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">bondProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedBondProduct">EmbeddedBondProduct</a></span> Bond Product is the Dept Instrument that can be issued to the market by a professional Issuer in order to finance loan.
+
+Danish: Obligationsprodukt </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Funding">Funding - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#Funding__links">Funding__links</a></span>  </div>
+<div class="param">principalAmountOutstanding (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> Principal Amount Outstanding states the amount left of the Principal Amount at the Latest Activity Date. 
+The latest Principal Amount Outstanding is e.g. used to calculate the following Instalment amounts like Interest Payment, Interst Margin Payment, and Principal Payment.
+
+When used in context Funding, Principal Amount Outstanding is the remaining amount by a given date that is raised to fund a specific Mortgage and that remains to be payed to the pool of investors who has bought the specific Bond(s). This Principal Amount Outstanding is in legacy refered to as 
+- &#39;Obligationsrestgæld&#39;.
+
+Danish: Restgæld </div>
+<div class="param">principalAmount (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> When used in Arrangement Funding, Principal Amount is the total amount that is raised to fund a specific Arrangement Mortgage. This Principal Amount is in legacy refered to as &#39;Obligationshovedstol&#39;.
+
+Danish: Hovedstol </div>
+<div class="param">interestRate (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> The Funding Interest Rate based on the coupon rate of the funded bond(s). If more bonds with different coupon rates are involved, then the interest rate is calculated as a weighted value.
+
+Danish: Obligationsrente format: double</div>
+<div class="param">fundedBonds (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundedBond">array[FundedBond]</a></span> For each Bond Product used to raise capital for a specific funding, the Funded Bond holds the information about issued amounts and disbursement bond price.
+
+Danish: Udstedt obligation </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="FundingHALLink">FundingHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Funding__links">Funding__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundingHALLink">FundingHALLink</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="GuaranteeHALLink">GuaranteeHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Instalment">Instalment - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">startDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The start date (date inclusive) of the period for the given instalment format: date</div>
+<div class="param">endDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The end date (date inclusive) of the period for the given instalment format: date</div>
+<div class="param">payment (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The Instalment Payment is a result of the Instalment calculation prior to current date. It is a sum of Interest Payment, Principal Payment, and Interest Margin Payment.
+Danish: terminsydelse </div>
+<div class="param">repayment (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The Repayment part of the total instalment.
+
+Danish: Afdragsbeløb </div>
+<div class="param">interestMargin (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The Interest Margin part of the total instalment.
+
+Danish: Bidragsbeløb </div>
+<div class="param">interest (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The Interest part of the total instalment.
+
+Danish: Rentebeløb </div>
+<div class="param">taxDeductibles (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The Tax Deductible part of the total instalment. This consists of interest, interest margin and &#39;tax deduction account&#39; (fradragskonto).
+
+Danish: Fradragsberettiget beløb </div>
+<div class="param">principalAmountOutstanding (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The new principal amount outstanding for the loan as calculated after repayment reduction.
+
+Danish: Restgæld </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="InstalmentHALLink">InstalmentHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="InstalmentSchedule">InstalmentSchedule - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#InstalmentSchedule__links">InstalmentSchedule__links</a></span>  </div>
+<div class="param">instalmentSchedule (optional)</div><div class="param-desc"><span class="param-type"><a href="#Instalment">array[Instalment]</a></span> Instalment Schedule includes Periodic Loan Repayments. If conditions related to the calculation of the Instalments change, a new version of Instalment Schedule will be made.
+
+Danish: Amortiseringsplan </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="InstalmentSchedule__links">InstalmentSchedule__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#InstalmentHALLink">InstalmentHALLink</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="InterestMarginScheduleItem">InterestMarginScheduleItem - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">startDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The start date (date inclusive) of the period for the given interest margin format: date</div>
+<div class="param">endDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The end date (date inclusive) of the period for the given interest margin format: date</div>
+<div class="param">interestMargin (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> Mortgage Banks charge an Interest Margin from the Borrower to cover daily operating costs and any losses and ultimately to make a profit. The Interest Margin is a percentage of the Principal Amount Outstanding which the Borrower pays throughout the loan term. This Interest Margin corresponds to the interest margin of a traditional bank, but this Interest Margin is known to the Borrower.
+
+Danish: Bidragssats
+   format: double</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="InterestOnly">InterestOnly - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">endDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The Interest Only End Date has a date value if an effective Mortgage at current date is in a period where the Borrower doesn&#39;t make Principal Payments but only make Interest Payment and Interest Margin Payment.
+
+Danish: Afdragsfrihed slut-dato format: date</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="InterestRateScheduleItem">InterestRateScheduleItem - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">interestRate (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> The interest rate percentage of the loan used to calculate the Interest Payment of the Instalment reflected on the Amortization Schedule for the loan.
+
+The Interest Rate applying for the Arrangement Mortgage Loan is derived from the Funding Arrangement. Depending on the type of Mortgage, the Interest Rate at Arrangement Mortgage Loan
+(1) is reflecting the Interest Rate at Arrangement Funding (Fastforrentede obligationslån)
+(2) is calculated when Mortgage Bond Prices for a new Funding Arrangement are known (Kontantlån/Tilpasningslån)
+(3) is calculated when a new reference Interest Rate is published (Variabeltforrentede obligationslån)
+
+Danish: Renteprocent format: double</div>
+<div class="param">startDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The start date (date inclusive) of the period for the given interest rate format: date</div>
+<div class="param">endDate (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The end date (date inclusive) of the period for the given interest rate format: date</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Loan">Loan - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#Loan__links">Loan__links</a></span>  </div>
+<div class="param">loanId </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+<div class="param">displayName </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> A display name assigned to the Mortgage Loan Arrangement. The name is constructed from Product Display Name plus e.g. interest information, tenor period, interest-only flag. This name is used in reports, documents, and GUIs referring to the Mortgage Loan Arrangement. Examples for a Display Name: &#39;Fastforrentet obligationslån, 2%, 30 år, med afdragsfrihed&#39; &#39;Tilpasningslån F5, 30 år, med afdragsfrihed, EUR&#39;. </div>
+<div class="param">interestRateSchedule </div><div class="param-desc"><span class="param-type"><a href="#InterestRateScheduleItem">array[InterestRateScheduleItem]</a></span> The interest rate for the given periods.
+
+Danish: Renteplan </div>
+<div class="param">principalAmountOutstanding </div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> Principal Amount Outstanding states the amount left of the Principal Amount at the Latest Activity Date. 
+The latest Principal Amount Outstanding is e.g. used to calculate the following Instalment amounts like Interest Payment, Interst Margin Payment, and Principal Payment.
+
+When used in context Mortgage, Principal Amount Outstanding is the remaining amount by a given date that the Borrower is obliged to pay back. This Principal Amount Outstanding is in legacy refered to as 
+- &#39;Kontantrestgæld&#39; for products of type &#39;Kontantlån&#39; or &#39;Tilpasningslån&#39;
+- &#39;Restgæld&#39; for products of type &#39;Fastforrentet Obligationslån&#39;. In these cases, the amount will be the same as Principal Amount Outstanding in context Funding.
+
+Danish: Restgæld </div>
+<div class="param">principalAmount </div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> Identifies that the amount is a Principal Amount, being an amount representing a loan amount.
+
+When used in Arrangement Mortgage Loan, Principal Amount is the amount that the Borrower is obliged to pay back. This Principal Amount is in legacy refered to as 
+- &#39;Kontanthovedstol&#39; for products of type &#39;Kontantlån&#39; or &#39;Tilpasningslån&#39;
+- &#39;Hovedstol&#39; for products of type &#39;Fastforrentet Obligationslån&#39;. In these cases, the amount will be the same as Principal Amount in Arrangement Funding.
+
+Danish: Hovedstol </div>
+<div class="param">remainingPeriodToMaturity </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The remaining period to maturity for the Arrangement Mortgage Loan defined by ISO 8601. The period is calculated from Latest Instalment Date.
+
+Example: Remaining Period to Maturity &#x3D; &#39;P9Y6M&#39; saying 9 years and 6 months
+
+Danish: Restløbetid </div>
+<div class="param">interestMarginSchedule </div><div class="param-desc"><span class="param-type"><a href="#InterestMarginScheduleItem">array[InterestMarginScheduleItem]</a></span> The interest margin for the given periods.
+
+Danish: Bidragssatsplan </div>
+<div class="param">loanActivitySchedule (optional)</div><div class="param-desc"><span class="param-type"><a href="#Activity">array[Activity]</a></span> Activities releated to the loan.
+
+Danish: Aktivitetsplan </div>
+<div class="param">paymentPatternSchedule (optional)</div><div class="param-desc"><span class="param-type"><a href="#PaymentPattern">array[PaymentPattern]</a></span> The payment pattern for the given periods.
+
+Danish: Amortiseringsformplan </div>
+<div class="param">prepaymentConditions (optional)</div><div class="param-desc"><span class="param-type"><a href="#PrepaymentCondition">PrepaymentCondition</a></span> Prepayment Condition tells under which conditions a loan can be prepayed.
+
+Danish: Indfrielsesvilkår </div>
+<div class="param">arrears (optional)</div><div class="param-desc"><span class="param-type"><a href="#Arrears">Arrears</a></span> Information about potential arrears on the loan.
+
+Danish: Restance </div>
+<div class="param">brokerProfitability (optional)</div><div class="param-desc"><span class="param-type"><a href="#BrokerProfitability">BrokerProfitability</a></span> The broker&#39;s profit return from the loan. Is not returned in customer context.
+
+Danish: PI Indtjening </div>
+<div class="param">interestOnly (optional)</div><div class="param-desc"><span class="param-type"><a href="#InterestOnly">InterestOnly</a></span> Indicates whether the loan is in a interest only period.
+
+Danish: I afdragsfri periode </div>
+<div class="param">_embedded (optional)</div><div class="param-desc"><span class="param-type"><a href="#Loan__embedded">Loan__embedded</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="LoanHALLink">LoanHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="LoanProductHALLink">LoanProductHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Loan__embedded">Loan__embedded - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">loanProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedLoanProduct">EmbeddedLoanProduct</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Loan__links">Loan__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">funding (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundingHALLink">FundingHALLink</a></span>  </div>
+<div class="param">real-property (optional)</div><div class="param-desc"><span class="param-type"><a href="#RealPropertyHALLink">RealPropertyHALLink</a></span>  </div>
+<div class="param">instalmentSchedule (optional)</div><div class="param-desc"><span class="param-type"><a href="#InstalmentHALLink">InstalmentHALLink</a></span>  </div>
+<div class="param">borrowers (optional)</div><div class="param-desc"><span class="param-type"><a href="#CustomerHALLink">CustomerHALLink</a></span>  </div>
+<div class="param">loanProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#LoanProductHALLink">LoanProductHALLink</a></span>  </div>
+<div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#LoanHALLink">LoanHALLink</a></span>  </div>
+<div class="param">guarantees (optional)</div><div class="param-desc"><span class="param-type"><a href="#GuaranteeHALLink">array[GuaranteeHALLink]</a></span> Lists all attached guarantees (sagsgaranti, forhaandslaansgaranti, modregningsret and selvskyldnergaranti) </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Loans">Loans - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'>A list of loans</div>
+    <div class="field-items">
+      <div class="param">_links (optional)</div><div class="param-desc"><span class="param-type"><a href="#Loans__links">Loans__links</a></span>  </div>
+<div class="param">_embedded (optional)</div><div class="param-desc"><span class="param-type"><a href="#Loans__embedded">Loans__embedded</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="LoansHALLink">LoansHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Loans__embedded">Loans__embedded - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">loans (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedLoan">array[EmbeddedLoan]</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="Loans__links">Loans__links - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">self (optional)</div><div class="param-desc"><span class="param-type"><a href="#LoansHALLink">LoansHALLink</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="PaymentPattern">PaymentPattern - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">type </div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span> The payment pattern type
+
+- &#39;amortized&#39;: Identifies a payment which is made by periodic transfers to a sinking fund. For example &#39;annuitet amortisering&#39; with equal repayment amount where the interest payment is a decreasing portion of each payment.
+- &#39;fixed-principal&#39;: Identifies a payment which is made to reduce the principal outstanding balance by a fixed payment amount. For example serial loan repayment with equal principal amounts repaid i the payment period.
+- &#39;interest-with-deferred-principal &#39;: Identifies a payment which is applied to the interest due for the period, with repayment of principal deferred until a later date or when demanded, or utilizing the remainder of funds above the interest amount due to apply towards the principal payment. For example a &#39;stående lån&#39; with payment of principal at the end of loan period. </div>
+        <div class="param-enum-header">Enum:</div>
+        <div class="param-enum">amortized</div><div class="param-enum">fixed-principal</div><div class="param-enum">interest-with-deferred-principal</div>
+<div class="param">startDate </div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The start date (date inclusive) of the period for the given payment pattern format: date</div>
+<div class="param">endDate </div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The end date (date inclusive) of the period for the given payment pattern format: date</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="PrepaymentCondition">PrepaymentCondition - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">callableFlag (optional)</div><div class="param-desc"><span class="param-type"><a href="#boolean">Boolean</a></span> Indicates whether the bond(s) underlying the funding of the loan are callable bonds.
+
+Danish: Konvertibel markering </div>
+<div class="param">callableBondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> In case of callable bonds this tells the fixed bond price (given by bond product) if making af call on the bond.
+
+Danish: Opsigelseskurs format: double</div>
+<div class="param">callableDeadline (optional)</div><div class="param-desc"><span class="param-type"><a href="#date">date</a></span> The upcoming latest date where it is possible to make a call on the bond underlying the funding of the loan.
+
+Danish: Opsigelsesdato format: date</div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="RealPropertyHALLink">RealPropertyHALLink - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">href (optional)</div><div class="param-desc"><span class="param-type"><a href="#string">String</a></span>  </div>
+    </div>  <!-- field-items -->
+  </div>
+  </body>
+</html>
