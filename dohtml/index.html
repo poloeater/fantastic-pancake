@@ -235,7 +235,7 @@ font-style: italic;
     <pre class="example"><code>{
   "interestRate" : 1.3579000000000001069366817318950779736042022705078125,
   "fundedBonds" : [ {
-    "BondPrice" : {
+    "bondPrice" : {
       "disbursementBondPrice" : 1.3579000000000001069366817318950779736042022705078125,
       "estimatedPrepaymentBondPrice" : 1.3579000000000001069366817318950779736042022705078125
     },
@@ -586,8 +586,8 @@ font-style: italic;
     <li><a href="#EmbeddedLoan__links"><code>EmbeddedLoan__links</code></a></li>
     <li><a href="#Error"><code>Error</code></a></li>
     <li><a href="#FundedBond"><code>FundedBond</code></a></li>
-    <li><a href="#FundedBond_BondPrice"><code>FundedBond_BondPrice</code></a></li>
     <li><a href="#FundedBond__embedded"><code>FundedBond__embedded</code></a></li>
+    <li><a href="#FundedBond_bondPrice"><code>FundedBond_bondPrice</code></a></li>
     <li><a href="#Funding"><code>Funding</code></a></li>
     <li><a href="#FundingHALLink"><code>FundingHALLink</code></a></li>
     <li><a href="#Funding__links"><code>Funding__links</code></a></li>
@@ -789,12 +789,21 @@ Danish: Restgæld </div>
 <div class="param">principalAmount (optional)</div><div class="param-desc"><span class="param-type"><a href="#Amount">Amount</a></span> The principal amount of the Bond used to fund a loan.
 
 Danish: Hovedstol </div>
-<div class="param">BondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundedBond_BondPrice">FundedBond_BondPrice</a></span>  </div>
+<div class="param">bondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundedBond_bondPrice">FundedBond_bondPrice</a></span>  </div>
 <div class="param">_embedded (optional)</div><div class="param-desc"><span class="param-type"><a href="#FundedBond__embedded">FundedBond__embedded</a></span>  </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
-    <h3 class="field-label"><a name="FundedBond_BondPrice">FundedBond_BondPrice - </a> <a class="up" href="#__Models">Up</a></h3>
+    <h3 class="field-label"><a name="FundedBond__embedded">FundedBond__embedded - </a> <a class="up" href="#__Models">Up</a></h3>
+    <div class='model-description'></div>
+    <div class="field-items">
+      <div class="param">bondProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedBondProduct">EmbeddedBondProduct</a></span> Bond Product is the Dept Instrument that can be issued to the market by a professional Issuer in order to finance loan.
+
+Danish: Obligationsprodukt </div>
+    </div>  <!-- field-items -->
+  </div>
+  <div class="model">
+    <h3 class="field-label"><a name="FundedBond_bondPrice">FundedBond_bondPrice - </a> <a class="up" href="#__Models">Up</a></h3>
     <div class='model-description'>Bond Price contains relevant bond prices for the specific funded bond
 
 Danish: Obligationskurs</div>
@@ -805,15 +814,6 @@ Danish: Udbetalingskurs format: double</div>
 <div class="param">estimatedPrepaymentBondPrice (optional)</div><div class="param-desc"><span class="param-type"><a href="#double">Double</a></span> The actual estimated bond price for prepayment.
 
 Danish: Indfrielseskurs format: double</div>
-    </div>  <!-- field-items -->
-  </div>
-  <div class="model">
-    <h3 class="field-label"><a name="FundedBond__embedded">FundedBond__embedded - </a> <a class="up" href="#__Models">Up</a></h3>
-    <div class='model-description'></div>
-    <div class="field-items">
-      <div class="param">bondProduct (optional)</div><div class="param-desc"><span class="param-type"><a href="#EmbeddedBondProduct">EmbeddedBondProduct</a></span> Bond Product is the Dept Instrument that can be issued to the market by a professional Issuer in order to finance loan.
-
-Danish: Obligationsprodukt </div>
     </div>  <!-- field-items -->
   </div>
   <div class="model">
